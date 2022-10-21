@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <b>Amount</b> <br>
+    <input type="text" size="10" placeholder="Nhập số tiền" id="amount"><br></br>
+    <b>From Curency</b><br>
+    <select id="FC">
+        <option selected value="a">Việt nam</option>
+        <option value="b">Mỹ</option>
+    </select>
+    <br> <br>
+    <b >To Curency</b><br>
+    <select id="TC">
+        <option selected value="a">Việt nam</option>
+        <option value="b">Mỹ</option>
+    </select>
+    <br> <br>
+    <button onclick="chuyentien()">Convert</button>
+    <label> Result : <span id ="KQ"> </span> </label>
+
+</body>
+<script>
+    function chuyentien() {
+        let a = +document.getElementById("amount").value;
+        let m = document.getElementById("FC").value;
+        let n = document.getElementById("TC").value;
+        if( m == n) {
+            document.getElementById("KQ").textContent=a;
+        } else if(m =='a' && n =='b') {
+            var tmp = a/23000;
+            document.getElementById("KQ").textContent = tmp;
+        } else if(m=='b' && n=='a') {
+            var tmp = a*23000;
+            document.getElementById("KQ").textContent = tmp;
+        }
+    }
+</script>
+</html>
