@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập bán kính(R) <span><input id="radius" type="text" size="3"></span></p><br>
+<button type="button" onclick="tinhChuvi()"> Tính </button><br>
+<label> Chu vi = <span id ="c"> </span> </label>
+</body>
+<script>
+    function tinhChuvi() {
+        const pi=3.14;
+        var r=+document.getElementById("radius").value;
+        var chuvi = 2*r*pi;
+        document.getElementById("c").textContent = chuvi;
+    }
+</script>
+</html>

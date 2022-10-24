@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập điểm vật lý: <span><input id="ly" type="text" size="3"></span></p>
+<br>
+<p>Nhập điểm Hoá học: <span><input id="hoa" type="text" size="3"></span></p>
+<br>
+<p>Nhập điểm Sinh học: <span><input id="sinh" type="text" size="3"></span></p>
+<button type="button" onclick="tinhDTB()"> Tính</button>
+<br>
+<label> Tổng : <span id="KQtong"> </span> </label> <br>
+<label> Điểm trung bình: <span id="KQdtb"> </span> </label>
+
+</body>
+<script>
+    function tinhDTB() {
+        var a = +document.getElementById("ly").value;
+        var b = +document.getElementById("hoa").value;
+        var c = +document.getElementById("sinh").value;
+        var tong = (a + b + c);
+        document.getElementById("KQtong").textContent = tong;
+        var dtb = (a + b + c) / 3
+        document.getElementById("KQdtb").textContent = dtb;
+    }
+</script>
+</html>

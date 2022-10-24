@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập giá trị độ(Celsius) <span><input id="celsisus" type="text" size="3"></span></p><br>
+<button type="button" onclick="tinhDo()"> chuyển </button><br>
+<label> Sau khi đổi sang độ F(Fahrenheit): <span id ="a"> </span> </label>
+</body>
+<script>
+    function tinhDo() {
+        var C = +document.getElementById("celsisus").value;
+        var F = (1.8*C)+32;
+        document.getElementById("a").textContent = F;
+    }
+</script>
+</html>
