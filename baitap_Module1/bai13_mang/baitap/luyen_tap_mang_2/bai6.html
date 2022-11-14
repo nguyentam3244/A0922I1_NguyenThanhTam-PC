@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+
+</body>
+<script>
+    let str = prompt("nhập chuỗi "),
+        arr =[];
+    for (let i = 0; i <str.length ; i++) {
+        arr[i]=str[i];
+    }
+    for (let i = 0; i < arr.length; i++) {
+        if(arr[i]==="-"){
+            arr.splice(i,1,"_");
+        }
+    }
+    document.write(arr.join(""));
+</script>
+</html>

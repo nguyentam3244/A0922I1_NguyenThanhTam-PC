@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let n = +prompt("Nhập số phần tử trong mảng");
+    let V = +prompt("Nhập số để xem có trong mảng k ?");
+    let a = [];
+    for (let i = 0; i < n; i++) {
+        a[i] = +prompt("Nhập phần tử thứ" + i);
+    }
+    for (let i = 0; i < n; i++) {
+        if(a[i] === V){
+            alert("V is in the array");
+        } else {
+            alert("V is not in the array");
+        }
+    }
+    // document.write(a);
+</script>
+</html>

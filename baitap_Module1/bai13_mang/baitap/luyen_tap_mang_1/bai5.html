@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình đếm số nguyên âm trong một chuỗi</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập số phần tử trong mảng");
+    let a = [];
+    for (let i = 0; i < n; i++) {
+        a[i] = +prompt("Nhập phần tử thứ" + i);
+    }
+    let dem = 0;
+    for (let i = 0; i < a.length; i++) {
+        if(a[i]  < 0){
+            dem++;
+        }
+    }
+    let str = a.toString();
+    document.write(str + "<br>");
+    document.write(dem);
+</script>
+</body>
+</html>

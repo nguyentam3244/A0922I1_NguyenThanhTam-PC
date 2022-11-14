@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 5</title>
+</head>
+<body>
+
+</body>
+<script>
+    let strA = prompt("nhập chuỗi A "),
+        strB = prompt("nhập chuỗi B "),
+        count = 0;
+    if (strA.length === strB.length) {
+        for (let i = 0; i < strA.length; i++) {
+            if (strA[i] === strB[i]) {
+                count++;
+            }
+        }
+        if (count === strA.length) {
+            document.write("hai chuỗi A và B giống nhau");
+        } else {
+            document.write("hai chuỗi A và B khác nhau");
+        }
+    } else {
+        document.write("hai chuỗi A và B khác nhau");
+    }
+</script>
+</html>

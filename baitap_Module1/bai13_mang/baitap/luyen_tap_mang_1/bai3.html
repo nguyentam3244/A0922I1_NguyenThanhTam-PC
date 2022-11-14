@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình khởi tạo mảng số nguyên. Hiển hiện giá trị lớn nhất trong mảng đó. In ra giá trị trung bình của các phần tử trong mảng.</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập số phần tử trong mảng");
+    let max = 0;
+    let s = 0;
+    let a = [];
+    for (let i = 0; i < n; i++) {
+        a[i] = +prompt("Nhập phần tử thứ" + i);
+    }
+    for (let i = 0; i < n; i++) {
+        if( a[i] > max){
+            max = a[i];
+         }
+    }
+    // document.write(max);
+    for (let i = 0; i < n ; i++) {
+        s = s + a[i];
+    }
+    let dtb = s/(n);
+    document.write(s + "<br>");
+    document.write(dtb); 
+    // document.write(a);
+</script>
+</body>
+</html>

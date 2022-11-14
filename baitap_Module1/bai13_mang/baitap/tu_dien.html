@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+
+</body>
+<script>
+    let vietnamese = ["thích", "dữ liệu", "thông tin"],
+        english = ["like", "data", "information"];
+    while (true) {
+        let str = prompt("nhập tiếng Anh");
+        if (english.indexOf(str) !== -1) {
+            for (let i = 0; i < english.length; i++) {
+                if (str === english[i]) {
+                    alert(vietnamese[i])
+                    break;
+                }
+            }
+        } else {
+            alert("từ chưa được bổ sung trong từ điển")
+        }
+    }
+
+
+</script>
+</html>
